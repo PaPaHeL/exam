@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    border: 0.5px solid;
+    height: 52px;
+}
+nav .title{
+    display: flex;
+    flex-direction: row;
+    margin-left: 110px;
+}
+.links
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+.links a
+{
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.left-p{
+    margin-left: 360px;
+}
+.btn1{
+    background: #C3002F;
+    color: white;
+    height: 50px;
+    width: 208px;
+    border: 0;
+    margin-top: -10px;
+    position: absolute;
+    margin-left: 173px;
+}
+.left-p h3{
+    margin-left: -30px;
+    position: absolute;
+}
+.mid-r{
+    padding-left: 150px;
+    margin-top: 100px;
+}
+middle{
+    display: flex;
+    flex-direction: row;
+}
+.mid-l img{
+    width: 740px;
+    margin-left: 11px;
+}
+.under-mid-r{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #4A4A4A;
+    height: 148px;
+    margin-top: 25px;
+    position: absolute;
+    width: 680px;
+    margin-left: -50px;
+}
+.one{
+    padding-top: 40px;
+    padding-left: 5px;
+    border-right: 0.3px solid #4A4A4A;
+    width: 300px;
+    font-size: 18px;
+}
+.two{
+    padding-top: 45px;
+    padding-left: 5px;
+    background: #C3002F;
+    color: white;
+    width: 410px;
+    height: 148px;
+}
+.under-mid-r ion-icon{
+    color: #FFFFFFB5;
+    padding-top: 5px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    margin-left: -50px;
+}
+.card{
+    margin-left: 200px;
+    width: 80px;
+    height: 20px;
+}
+hr{
+    width: 1550px;
+    margin-left: -1300px;
+    margin-top: 100px;
+}
+.part1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 300px;
+}
+.left{
+    margin-top: 200px;
+    margin-left: 200px;
+}
+.right img{
+    height: 600px;
+    width: 800px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.part2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    margin-top: 100px;
+}
+.p-l{
+    color: #4A4A4A;
+}
+.btn2{
+    width: 150px;
+    height: 40px;
+    background: none;
+    border: 1px solid #C3002F;
+    color: #4A4A4A;
+}
+.hr1{
+    width: 2820px;
+    margin-left: -1300px;
+    margin-top: 100px;   
+}
+.p-r img{
+    cursor: pointer;
+}
+.p-l{
+    margin-left: 30px;
+    line-height: 30px;
+}
+.p-l h2{
+    margin-top: 10px
+}
+.p-l h4{
+    margin-top: 10px
+}
+.part3{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+.img img{
+    margin-top: -102px;
+    margin-left: 10px;
+}
+
+.first{
+    margin-left: 100px;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+}
+.form input{
+    width: 200px;
+    height: 45px;
+    margin-left: 20px;
+}
+.btn3{
+    background: #C3002F;
+    color: white;
+    width: 130px;
+    height: 45px;
+    border: none;
+    margin-left: 20px;
+}
+.part4{
+    margin-left: 120px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.p-l1{
+    margin-top: 150px;
+    margin-left: 100px;
+
+}
+.part5{
+    margin-left: 150px;
+    display: flex;
+    flex-direction: row;
+}
+.leftt{
+    margin-top: 50px;
+}
+.img1{
+    margin-left: 100px;
+}
+.form1{
+    border: 1px solid #4A4A4A;
+    width: 725px;
+    height: 512px;
+    position: absolute;
+    margin-top: -850px;
+    background: white;
+    margin-left: 750px;
+    /* text-align: center; */
+    padding-top: 150px;
+    padding-left: 20px;
+}
+.partners{
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+.part99 img{
+    cursor: pointer;
+    margin-left: 120px;
+}
+.nodisp{
+    position: absolute;
+    margin-top: 25px;
+}
+.OK{
+    margin-top: 20px;
+}
+.quest{
+    margin-left: 150px;
+    margin-top: 80px;
+}
+.foorm{
+    display: flex;
+    flex-direction: row;
+    margin-left: 450px;
+    margin-top: -60px;
+}
+.foorm input{
+    margin-left: 20px;
+    width: 200px;
+    padding: 5px;
+}
+.map img{
+    width: 100%;
+}
+footer{
+    background: #151414;
+    height: 346px;
+    display: flex;
+    margin-left: 20px;
+    flex-direction: row;
+    padding-top: 20px;
+}
+.block1{
+    display: flex;
+    flex-direction: column;
+}
+
+.block2{
+    display: flex;
+    flex-direction: column;
+}
+
+.block3{
+    display: flex;
+    flex-direction: column;
+}
+
+.block4{
+    display: flex;
+    flex-direction: column;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+.block1, .block2, .block3, .block4{
+    margin-left: 100px;
+}
+.white{
+    color: white;
+}
+.icons ion-icon{
+    font-size: 25px;
+    margin-top: 10px;
+}
