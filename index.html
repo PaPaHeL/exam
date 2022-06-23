@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phone_style.css">
 </head>
 <body>
+<div id="app">    
     <nav>
         <style>
             .vl{
@@ -24,25 +26,49 @@
             <img style="height: 25px; width: 25px;" src="Vector.png" alt="">
             <h1 style="font-family: Impact, fantasy; margin-left: 2px;">MIXWOOD</h1>
         </div>
-        <div class="links">
-            <a href="#">Каталог</a>
-            <a href="#">Услуги</a>
-            <a href="#">Наши проекты</a>
-            <a href="#">Информация</a>
-            <a href="#">Контакты</a>
-        </div>
-        <div class="left-p" style="display: flex; flex-direction: row;">
-            <h3>+7 (917) 520 32 00</h3>
-            <button class="btn1">Вызвать на замер</button>
-        </div>
+        <span @click="nav" class="nav" style="cursor: pointer;" :aria-pressed="open ? 'true' : 'false'">             
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/OOjs_UI_icon_close.svg/768px-OOjs_UI_icon_close.svg.png" :class="{ open_bar : open}" class="close_navbar"  alt="">                             
+            <i class="fa-solid fa-bars bar"></i>                
+        </span>        
+            <div class="links">
+                <a href="#">Каталог</a>
+                <a href="#">Услуги</a>
+                <a href="#">Наши проекты</a>
+                <a href="#">Информация</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="left-p" style="display: flex; flex-direction: row;">
+                <h3>+7 (917) 520 32 00</h3>
+                <button class="btn1">Вызвать на замер</button>
+            </div>
+            <div class="header_phone" id="header_phone" :class="{ nav_open : open}">
+                <div class="navbar_phone">                
+                    <a href="#">Каталог</a>
+                    <a href="#">Услуги</a>
+                    <a href="#">Наши проекты</a>
+                    <a href="#">Сколько стоит?</a>
+                    <a href="#">Информация</a>
+                    <a href="#">Контакты</a>
+                    <span>+7 (917) 520 32 00</span>
+                    <span>
+                        <a href=""><ion-icon class="ion_icon" name="mail-outline"></ion-icon></a>
+                        <a href=""><ion-icon class="ion_icon" name="logo-whatsapp"></ion-icon></a>
+                        <a href=""><ion-icon class="ion_icon" name="logo-vk"></ion-icon></a>
+                        <a href="" class="facebook_phone"><i class="fa-brands fa-facebook-f"></i></a>
+                    </span>
+                </div>    
+                <div class="header_send_phone">
+                    <button>Вызвать на замер</button>
+                </div>
+            </div>                        
     </nav>
 
     <middle>
         <div class="mid-r">
             <h4 style="color: #C3002F; font-size: 17px;">ЛУЧШИЕ МИРОВЫЕ БРЕНДЫ</h4>
             <br>
-            <h1 style="font-size: 49px; width: 619px; height: 219px;">Купить террасную <br> доску из ДПК в <br> Москве и области</h1> 
-            <h4 style="color: #4A4A4A; width: 590px;height: 140px; font-size: 16px; line-height: 22px; margin-top: -30px;" >Террасная доска из ДПК (древесно-полимерного композита) представляет собой <br> композитную доску нового поколения. Ее поверхность максимально приближена <br> к натуральной древесине за счет глубокого тиснения. Схожесть с натуральным <br> материалом также обеспечена не однородной цветовой гаммой. Компания <br> Mixwood занимается производством досок для террасы и осуществляет <br> комплексное обслуживание, включая монтаж.</h4>
+            <h1  class="mid_r_text">Купить террасную <br class="br"> доску из ДПК в <br class="br"> Москве и области</h1> 
+            <h4 class="mid_r_text_2">Террасная доска из ДПК (древесно-полимерного композита) представляет собой <br> композитную доску нового поколения. Ее поверхность максимально приближена <br class="br"> к натуральной древесине за счет глубокого тиснения. Схожесть с натуральным <br class="br"> материалом также обеспечена не однородной цветовой гаммой. Компания <br class="br"> Mixwood занимается производством досок для террасы и осуществляет <br class="br"> комплексное обслуживание, включая монтаж.</h4>
             <div class="under-mid-r">
                 <div class="one">
                     <h1>НАШИ ПРОЭКТЫ</h1>
@@ -62,17 +88,17 @@
             <img src="photo_2022-06-22_15-16-28.jpg" alt="">
         </div>
         <div class="card">
-            <img src="photo_2022-06-22_15-16-28 (2).jpg" alt="">
+            <img src="photo_2022-06-22_15-16-28 (2).jpg" class="card_du" alt="">
         </div>
         <div class="card">
             <img src="photo_2022-06-22_15-16-28 (3).jpg" alt="">
         </div>
         <div class="card">
-            <img src="photo_2022-06-22_15-16-29.jpg" alt="">
+            <img src="photo_2022-06-22_15-16-29.jpg" class="card_du" alt="">
         </div>
         <div class="card">
             <img src="photo_2022-06-22_15-16-29 (2).jpg" alt="">
-            <hr>
+            <hr class="hr_card">
         </div>
     </div>
 
@@ -80,7 +106,7 @@
         <div class="left">
             <h3 style="color: #C3002F;">Где используется декинг?</h3>
             <br>
-            <h1>Что мы можем сделать для Вас</h1> 
+            <h1 class="part1_h1">Что мы можем сделать для Вас</h1> 
             <h3 style="color: #4A4A4A;" >Доски из ДПК активно используются для создания <br> напольных покрытий, которые будут не только <br> высококачественными, но и безопасными при ходьбе.</h3>
         </div>
         <div class="right">
@@ -90,12 +116,12 @@
     <hr class="hr1">
     <div class="part2">
         <div class="p-r">
-            <img src="block1.png" alt="">
+            <img src="block1.png" class="block1" alt="">
         </div>
         <div class="p-l">
-            <h1   style="font-size: 25px;">Купить террасный декинг в магазине Mixwood</h1>
+            <h1    class="part2_h1">Купить террасный декинг в магазине Mixwood</h1>
             <h2>Все материалы для строительства террас</h2>
-            <h4>Наша компания предлагает купить террасный декинг собственного <br> производства. Материал отличается высоким качеством, потрясающей <br> схожестью с натуральной древесиной и широкой палитрой оттенков. <br> Продажа досок сопровождается следующими выгодами для клиентов: <br>   
+            <h4 class="part2_h4">Наша компания предлагает купить террасный декинг собственного <br> производства. Материал отличается высоким качеством, потрясающей <br> схожестью с натуральной древесиной и широкой палитрой оттенков. <br> Продажа досок сопровождается следующими выгодами для клиентов: <br>   
                 • у нас вы можете не только дешево купить материал для обшивки террасы или другого объекта, но и заказать монтаж; <br>
                 • география нашей деятельности – Москва и Московская область;</h4> <br>
                 <br>
@@ -107,7 +133,7 @@
 
     <div class="part3">
         <div class="first">
-            <h2>Хотите красивую и комфортную <br> террасу, но не знаете с чего начать?</h2> <br>
+            <h2 class="part3_h2">Хотите красивую и комфортную <br> террасу, но не знаете с чего начать?</h2> <br>
             <h4>Заполните заявку и наш консультант свяжется с вами, квалифицированно <br> ответит на все вопросы и даст рекомендации по выбору материалов для <br> вашей террасы.</h4>
             <br><br>
             <div class="form">
@@ -129,7 +155,7 @@
     <hr class="hr1">
     <div class="part4">
         <div class="p-r1">
-            <img style="cursor: pointer;" src="p4.png" alt="">
+            <img style="cursor: pointer;" class="part4_img" src="p4.png" alt="">
         </div>
         <div class="p-l1">
             <h3 style="color: #C3002F;">Наши проэкты</h3>
@@ -165,13 +191,13 @@
     <hr class="hr1">
     <div class="part5">
         <div class="fifth-r">
-            <img src="five.png" alt="">
+            <img src="five.png" class="five" alt="">
         </div>
         <div class="leftt">
             <h3 style="color: #C3002F;">Преимущества композитной террасной доски</h3>
             <br>
             <h1>Почему не стоит экономить <br> и выбрать лучшие <br> материалы</h1> <br><br>
-            <h5>Террасная доска красива внешне, так как очень схожа с натуральным деревом. <br> При этом стоимость эксплуатации в разы ниже. Помимо привлекательного вида, <br> они обладают рядом преимуществ. У нас можно купить доску, которая будет: <br>
+            <h5 class="part5_h5">Террасная доска красива внешне, так как очень схожа с натуральным деревом. <br> При этом стоимость эксплуатации в разы ниже. Помимо привлекательного вида, <br> они обладают рядом преимуществ. У нас можно купить доску, которая будет: <br>
                 • долговечной – средний срок использования составляет 20 лет; <br>
                 • устойчивой к износам – не подвергается термическому, биологическому или механическому воздействию;<br>
                 • легкой в монтаже – при необходимости выполнить монтаж могут наши специалисты;<br>
@@ -183,7 +209,7 @@
     <hr class="hr1">
     <div class="part6">
         <div class="img1">
-            <img src="Construction-Loan-101 1.png" alt="">
+            <img src="Construction-Loan-101 1.png" class="construct" alt="">
         </div>
         <div class="form1">
 
@@ -197,7 +223,7 @@
                 <button class="btn3">Отправить заявку</button>  
                 <div class="text">
                      <br>
-                    <h4 style="position: absolute; margin-top: 30px; margin-left: -590px;">* Отправляя заявку вы соглашаетесь с политикой конфиденциальности</h4>
+                    <h4 class="form_h4" style="position: absolute; margin-top: 30px; margin-left: -590px;">* Отправляя заявку вы соглашаетесь с политикой конфиденциальности</h4>
                 </div>
             </div>
         </div>
@@ -236,35 +262,35 @@
         <footer>
             <div class="block1">
                 <h1 class="white">Реквизиты</h1><br>
-                <h3 class="white">ИНН 7724885495 <br> ОГРН 1137746716447</h3> <br>
-                <h3 class="white">© ООО «МиксВуд» 2009 - 2020</h3> <br>
-                <h4 class="white">Политика конфиденциальности</h4> <br><br><br>
-                <h4 class="white">Создание сайта AlbaWeb</h4>
+                <h3 class="white white_1">ИНН 7724885495 <br> ОГРН 1137746716447</h3> <br>
+                <h3 class="white white_1">© ООО «МиксВуд» 2009 - 2020</h3> <br>
+                <h4 class="white white_1">Политика конфиденциальности</h4> <br class="br"><br class="br"><br>
+                <h4 class="white white_1">Создание сайта AlbaWeb</h4>
             </div>
             <div class="block2">
-                <h1><a href="#">Каталог</a></h1> <br><br>
-                <a href="#">Террасная доска из ДПК</a><br><br>
-                <a href="#">Террасная доска массив</a><br><br>
-                <a href="#">Ступени из ДПК</a><br><br>
-                <a href="#">Садовый паркет</a><br>
+                <h1><a href="#" class="white">Каталог</a></h1> <br class="br"><br>
+                <a href="#" class="white_1">Террасная доска из ДПК</a><br class="br"><br>
+                <a href="#" class="white_1">Террасная доска массив</a><br class="br"><br>
+                <a href="#" class="white_1">Ступени из ДПК</a><br><br>
+                <a href="#" class="white_1">Садовый паркет</a><br>
             </div>
             
             <div class="block3">
-                <h1><a href="#">Услуги</a></h1><br><br>
-                <a href="#">Фасадные работы</a><br><br>
-                <a href="#">Производство свай</a><br><br>
-                <a href="#">Монтаж декинга</a><br><br>
-                <a href="#">Строительство террас</a><br><br>
-                <a href="#">Проектные работы</a>
+                <h1><a href="#" class="white">Услуги</a></h1><br><br>
+                <a href="#" class="white_1">Фасадные работы</a><br class="br"><br>
+                <a href="#" class="white_1">Производство свай</a><br class="br"><br>
+                <a href="#" class="white_1">Монтаж декинга</a><br class="br"><br>
+                <a href="#" class="white_1">Строительство террас</a><br class="br"><br>
+                <a href="#" class="white_1">Проектные работы</a>
             </div>
 
             <div class="block4">
                 <h1 class="white">Контакты</h1><br>
-                <br><h3 class="white">г. Москва, ул. Марии Ульяновой, 17А.</h3> <br><br>
-                <h3 class="white">+7 (495) 970-90-16</h3> <br>
-                <h3 class="white">+7 (917) 520-32-00</h3><br>
-                <h3 class="white">info@mixwood.com</h3><br><br>
-                <h3 class="white">Пн — Вс с 08:00 до 22:00</h3>
+                <br><h3 class="white white_1">г. Москва, ул. Марии Ульяновой, 17А.</h3> <br class="br"><br>
+                <h3 class="white white_1">+7 (495) 970-90-16</h3> <br>
+                <h3 class="white white_1">+7 (917) 520-32-00</h3><br>
+                <h3 class="white white_1">info@mixwood.com</h3><br><br>
+                <h3 class="white white_1">Пн — Вс с 08:00 до 22:00</h3>
                 <div class="icons">
                     <ion-icon name="logo-whatsapp"></ion-icon>
                     <ion-icon name="logo-vk"></ion-icon>
@@ -272,8 +298,27 @@
                 </div>
             </div>
         </footer>
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</div>        
+        <script src="https://kit.fontawesome.com/26d42b736c.js" crossorigin="anonymous"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!-- vue.js -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
+    
+        <script>
+           var app = new Vue ({
+               el:"#app",
+               data:{
+                open:false,
+               },  
+               methods:{
+                 nav(){
+                    this.open = !this.open
+    
+                 }
+               }
+           })
+       </script>
 </body>
 </html>

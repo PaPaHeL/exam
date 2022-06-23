@@ -294,3 +294,30 @@ footer a{
     font-size: 25px;
     margin-top: 10px;
 }
+.mid_r_text
+{
+    font-size: 49px;
+    width: 619px;
+    height: 219px;
+}
+.mid_r_text_2
+{
+    color: #4A4A4A;
+    width: 590px;
+    height: 140px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: -30px;
+}
+.part2_h1{
+    font-size: 25px;
+}
+.header_phone{
+    display: none;
+}
+.nav{
+    display: none;
+}
+.close_navbar{
+    display: none;
+}
